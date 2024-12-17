@@ -1,0 +1,84 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Base font */
+    background-color: #f8f9fa; /* Light background */
+    color: #333; /* Dark text */
+    line-height: 1.6; /* Line height for better readability */
+}
+
+/* Navigation Styles */
+.navbar {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between brand and links */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Padding for navbar */
+    background-color: #ff0000; /* Main red color */
+}
+
+.navbar-brand {
+    display: flex; /* Flexbox for logo */
+    align-items: center; /* Center logo vertically */
+}
+
+.navbar-logo {
+    width: 30px; /* Smaller logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.navbar-nav {
+    display: flex; /* Flexbox for nav items */
+    align-items: center; /* Center items vertically */
+}
+
+.nav-link {
+    color: #ffffff; /* White links */
+    text-decoration: none; /* Remove underline */
+    padding: 0 10px; /* Horizontal padding */
+    font-weight: bold; /* Bold text */
+}
+
+/* Separator styling */
+.nav-link:not(:last-child)::after {
+    content: '|'; /* Add separator */
+    margin-left: 10px; /* Space before separator */
+    color: #ffffff; /* Separator color */
+}
+
+/* Main Content Styles */
+.container {
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center content */
+    padding: 1rem; /* Add padding */
+    color: #ff0000;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #ff0000; /* Red background to match navbar */
+    color: #fff; /* White text */
+    text-align: center; /* Center text */
+    padding: 10px 0; /* Footer padding */
+    width: 100%; /* Full width */
+}
+
+.footer-nav {
+    display: flex; /* Flexbox for footer content */
+    justify-content: center; /* Center content */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack links on small screens */
+    }
+
+    .navbar a {
+        padding: 0.5rem; /* Adjust padding on small screens */
+    }
+
+    .container {
+        padding: 0.5rem; /* Adjust container padding on small screens */
+    }
+}

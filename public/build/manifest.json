@@ -1,0 +1,16 @@
+{
+  "resources/css/custom-theme.css": {
+    "file": "assets/custom-theme-B1JLl1t-.css",
+    "src": "resources/css/custom-theme.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CHsZO-rk.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-DnVUw_vK.css"
+    ]
+  }
+}
